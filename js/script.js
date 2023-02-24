@@ -60,7 +60,7 @@ function loadQuiz(){
 
     const currentQuizData = quizData[currentQuiz]
 
-    questionEl.innerText = currentQuizData.question
+    questionEl.innerText = `<${currentQuiz+1}/${quizData.length}> \n\n ${currentQuizData.question}`
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
